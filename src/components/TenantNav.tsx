@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 interface TenantNavProps {
     tenantSlug: string;
@@ -22,6 +23,9 @@ export default function TenantNav({ tenantSlug }: TenantNavProps) {
                         >
                             Projects
                         </Link>
+                    </div>
+                    <div className="flex items-center">
+                        <ThemeToggle />
                     </div>
                 </div>
             </div>
