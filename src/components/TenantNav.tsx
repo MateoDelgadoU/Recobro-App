@@ -2,9 +2,17 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 
 interface TenantNavProps {
+    /** The unique identifier (slug) of the current tenant to build correct URLs */
     tenantSlug: string;
 }
 
+/**
+ * Navigation bar for tenant-specific pages.
+ * Appears at the top of the dashboard and project pages.
+ * Includes links to main sections and the global theme toggle.
+ * 
+ * @param props - Contains the tenant slug for routing.
+ */
 export default function TenantNav({ tenantSlug }: TenantNavProps) {
     return (
         <nav className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-black">

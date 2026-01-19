@@ -1,9 +1,16 @@
 import type { ProjectStatus } from '@/lib/types';
 
 interface StatusBadgeProps {
+    /** The current status of the project to render */
     status: ProjectStatus;
 }
 
+/**
+ * Visual indicator for project status.
+ * Renders a color-coded badge based on the status (active/archived).
+ * 
+ * @param props - Contains the status string.
+ */
 export default function StatusBadge({ status }: StatusBadgeProps) {
     const styles = {
         active:

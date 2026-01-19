@@ -3,10 +3,18 @@ import Link from 'next/link';
 import StatusBadge from './StatusBadge';
 
 interface ProjectCardProps {
+    /** The project data to display */
     project: Project;
+    /** Current tenant context for linking to project details */
     tenantSlug: string;
 }
 
+/**
+ * Server Component representing a single project in a grid or list.
+ * Displays summary information including status, description, and creation date.
+ * 
+ * @param props - Component properties including project data and tenant context.
+ */
 export default function ProjectCard({ project, tenantSlug }: ProjectCardProps) {
     return (
         <Link

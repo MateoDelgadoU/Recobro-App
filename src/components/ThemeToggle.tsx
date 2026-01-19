@@ -2,6 +2,11 @@
 
 import { useTheme } from './ThemeProvider';
 
+/**
+ * Interactive button component to toggle between light and dark themes.
+ * Uses the ThemeContext to read and update state.
+ * Renders SVG icons appropriate for the current state.
+ */
 export default function ThemeToggle() {
     const { theme, toggleTheme } = useTheme();
 

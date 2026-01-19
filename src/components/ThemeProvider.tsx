@@ -4,13 +4,25 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
+/**
+ * Interface defining the shape of the ThemeContext.
+ */
 interface ThemeContextType {
+    /** Current active theme ('light' or 'dark') */
     theme: Theme;
+    /** Function to toggle between themes */
     toggleTheme: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+/**
+ * Client Component provider that manages application-wide theme state.
+ * Handles persistence to localStorage and synchronization with system preferences.
+ * Wraps the entire application in layout.tsx.
+ * 
+ * @param children - The application components to wrap.
+ */
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('light');
 
