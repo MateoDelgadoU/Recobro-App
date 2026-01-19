@@ -14,8 +14,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Recobro - Multi-tenant Project Management',
+  metadataBase: new URL('https://recobro-app.vercel.app/'),
+  title: {
+    default: 'Recobro - Multi-tenant Project Management',
+    template: '%s | Recobro'
+  },
   description: 'Modern multi-tenant SaaS dashboard for project management',
+  openGraph: {
+    title: 'Recobro - Multi-tenant Project Management',
+    description: 'Modern multi-tenant SaaS dashboard for project management',
+    url: 'https://recobro-app.vercel.app/',
+    siteName: 'Recobro',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Recobro - Multi-tenant Project Management',
+    description: 'Modern multi-tenant SaaS dashboard for project management',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
