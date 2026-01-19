@@ -2,11 +2,9 @@
 
 Un dashboard moderno y listo para producción de gestión de proyectos multi-tenant construido con Next.js 16 (App Router), TypeScript y TailwindCSS v4.
 
-## 🚀 Demo en Vivo
+## Demo en Vivo
 - **URL de producción**: https://recobro-app.vercel.app
 - **Repositorio**: https://github.com/MateoDelgadoU/Recobro-App
-
-## Demo en Vivo
 
 Tenants disponibles:
 - `/acme/dashboard` - Acme Corporation
