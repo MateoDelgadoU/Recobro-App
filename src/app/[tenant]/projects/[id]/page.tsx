@@ -1,4 +1,4 @@
-import { projectService } from '@/lib/services/project.service';
+import { projectService } from '@/services/project.service';
 import { notFound } from 'next/navigation';
 import StatusBadge from '@/components/StatusBadge';
 import Link from 'next/link';

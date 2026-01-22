@@ -1,5 +1,5 @@
-import { tenantService } from '@/lib/services/tenant.service';
-import { projectService } from '@/lib/services/project.service';
+import { tenantService } from '@/services/tenant.service';
+import { projectService } from '@/services/project.service';
 import Link from 'next/link';
 
 interface DashboardPageProps {

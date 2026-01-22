@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { tenantService } from '@/lib/services/tenant.service';
+import { tenantService } from '@/services/tenant.service';
 import { notFound } from 'next/navigation';
 import TenantNav from '@/components/TenantNav';
 

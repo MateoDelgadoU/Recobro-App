@@ -1,4 +1,4 @@
-import type { ProjectStatus } from '@/lib/types';
+import type { ProjectStatus } from '@/types';
 
 interface StatusBadgeProps {
     /** The current status of the project to render */

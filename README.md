@@ -18,18 +18,17 @@ La aplicación sigue un **enfoque de clean architecture** con clara separación 
 
 ```
 src/
-├── lib/
-│   ├── types.ts                    # Tipos de dominio
-│   ├── data/
-│   │   └── mock-data.ts           # Capa de datos (fácilmente reemplazable)
-│   ├── repositories/
-│   │   ├── tenant.repository.ts   # Abstracción de acceso a datos
-│   │   └── project.repository.ts
-│   └── services/
-│       ├── tenant.service.ts      # Lógica de negocio
-│       └── project.service.ts
-├── components/                     # Componentes de presentación
-└── app/                           # Rutas y páginas
+├── services/                  # Business Logic & Rules
+│   ├── tenant.service.ts
+│   └── project.service.ts
+├── repositories/              # Data Access Layer & Abstractions
+│   ├── tenant.repository.ts
+│   └── project.repository.ts
+├── types.ts                   # Core Domain Types
+├── data/                      # Data Source (Mock Data)
+│   └── mock-data.ts
+├── components/                # UI/Presentation Components
+└── app/                       # Application Routes & Pages
 ```
 
 **¿Por qué este enfoque?**

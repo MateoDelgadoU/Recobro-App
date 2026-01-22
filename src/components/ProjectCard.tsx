@@ -1,4 +1,4 @@
-import type { Project } from '@/lib/types';
+import type { Project } from '@/types';
 import Link from 'next/link';
 import StatusBadge from './StatusBadge';
 

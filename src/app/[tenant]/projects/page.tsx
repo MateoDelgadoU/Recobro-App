@@ -1,4 +1,4 @@
-import { projectService } from '@/lib/services/project.service';
+import { projectService } from '@/services/project.service';
 import ProjectCard from '@/components/ProjectCard';
 
 interface ProjectsPageProps {
